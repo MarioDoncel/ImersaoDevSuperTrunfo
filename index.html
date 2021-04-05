@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Ideia de incremento, jogo de joken po entre 2 players computador,ou 1 player vs com, com atualização automatica da tabela -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Imersão Dev - Aula 07
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+            alt="">
+        <h1 class="page-title">Super Trunfo</h1>
+
+        <button onclick="sortCard()" id="btnSort">Sortear carta</button>
+
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div id="score">
+
+            </div>
+            <div id="cardsQuantity">
+
+            </div>
+            <div class="wrapper">
+                
+                
+                <div id="cards">
+                    <div id="card-player">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                    </div>
+                    <div id="card-comp" class="card">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                             style=" width: inherit; height: inherit; position: absolute;">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="btnPlay" onclick="play()" disabled="false">Jogar</button>
+            <div id="results"></div>
+            <button type="button" id="btnNextRound" onclick="nextRound()" disabled="true">Proxima
+                rodada</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
